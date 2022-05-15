@@ -1,0 +1,44 @@
+@import 'styles/vars.scss';
+
+.main {
+  max-width: 375px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 3rem 0.3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f1f1f1;
+
+  &__pin {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 1rem;
+
+    & input {
+      margin-left: auto;
+    }
+  }
+}
+
+.add--icon {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    background-color: transparent;
+    fill: white;
+    width: 12px;
+  }
+}

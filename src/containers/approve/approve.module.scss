@@ -1,0 +1,76 @@
+.approve {
+  max-width: 375px;
+  margin: 0 auto;
+  direction: ltr !important;
+  padding: 3rem 2rem;
+  text-align: left;
+
+  &__action {
+    margin-left: auto;
+    & svg {
+      width: 16px;
+      height: 16px;
+    }
+    &--checked {
+      margin-right: 0.5rem;
+      fill: green;
+    }
+    &--reject {
+      margin-left: 0.5rem;
+      fill: red;
+    }
+  }
+
+  &__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 0.5rem;
+    position: relative;
+
+    & span {
+      &:first-child {
+        flex-basis: 30%;
+      }
+      &:nth-child(2) {
+        flex-basis: 50%;
+      }
+    }
+    img {
+      width: 110px;
+      height: 130px;
+      // position: absolute;
+    }
+  }
+  &__submit {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    direction: rtl;
+
+    &--save {
+      color: #fff;
+      border: none;
+      width: 72px;
+      height: 22px;
+      background: #57efdd;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-left: 0.5rem;
+    }
+
+    &--cancel {
+      color: #fff;
+      border: none;
+      width: 72px;
+      height: 22px;
+      background: #ff5050;
+      border-radius: 5px;
+      border: 1px solid #9d9c9c;
+      font-size: 12px;
+    }
+  }
+}

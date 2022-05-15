@@ -1,0 +1,59 @@
+.form {
+  max-width: 375px;
+  margin: 0 auto;
+  direction: ltr !important;
+  padding: 3rem 2rem;
+
+  &__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    & input {
+      outline: none;
+      width: 220px;
+      height: 28px;
+      background: #ffffff;
+      border: 1px solid #cecece;
+      border-radius: 5px;
+      margin: 0.5rem 0;
+      margin-left: auto;
+    }
+    label {
+      text-transform: capitalize;
+      font-size: 12px;
+    }
+  }
+
+  &__actions {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    direction: rtl;
+
+    &--submit {
+      color: #fff;
+      border: none;
+      width: 72px;
+      height: 22px;
+      background: #57efdd;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-left: 0.5rem;
+    }
+
+    &--cancel {
+      color: #fff;
+      border: none;
+      width: 72px;
+      height: 22px;
+      background: #ff5050;
+      border-radius: 5px;
+      border: 1px solid #9d9c9c;
+      font-size: 12px;
+    }
+  }
+}

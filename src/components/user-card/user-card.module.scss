@@ -1,0 +1,76 @@
+.card {
+  padding: 1rem 0.5rem;
+  width: 333px;
+  background-color: #e3e3e3;
+  display: flex;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+  position: relative;
+
+  &__check-btn {
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: #57efdd;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.4rem;
+    bottom: 0.3rem;
+    right: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &__pin {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  &__edit {
+    width: 14px;
+    position: absolute;
+    top: 7px;
+    right: 1.5rem;
+  }
+
+  &__img {
+    width: 102px;
+    height: 129px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 12px;
+    padding: 0.5rem;
+    width: calc(100% - 102px);
+
+    &--block {
+      display: flex;
+      justify-content: space-between;
+      & span:last-child {
+        font-weight: 700;
+      }
+
+      &--approve {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--danger svg {
+          width: 14px;
+          fill: red !important;
+        }
+        &--success svg {
+          width: 14px;
+          fill: green;
+        }
+      }
+    }
+  }
+}
